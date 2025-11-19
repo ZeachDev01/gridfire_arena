@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Top-Down Shooter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="startScreen" class="overlay">
+      <h1>Top-Down Shooter</h1>
+      <p>WASD to move • Move mouse to aim • Click or Space to shoot</p>
+      <button id="startBtn">Start Game</button>
+    </div>w
+
+    <div id="hud">
+      <div id="score">Score: 0</div>
+      <div id="health">Health: 100</div>
+      <button id="restartBtn" class="hidden">Restart</button>
+    </div>
+
+    <div id="gameOver" class="overlay hidden">
+      <h1>Game Over</h1>
+      <p id="finalScore">Score: 0</p>
+      <button id="restartBtn2">Play Again</button>
+    </div>
+  </div>
+
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
